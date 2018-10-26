@@ -45,7 +45,20 @@ a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-
+.bgImage{
+    background: url(img/burger.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bgImage img{ 
+    width:100%;
+    height:auto;
+}
+.form-group {
+    margin-bottom: 0px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -53,6 +66,7 @@ a:focus {
 .wrapper {
     display: flex;
     width: 100%;
+    height:800px;
     align-items: stretch;
 }
 
@@ -105,13 +119,13 @@ a[data-toggle="collapse"] {
     position: relative;
 }
 
-.dropdown-toggle::after {
+/*.dropdown-toggle::after {
     display: block;
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
+}*/
 
 ul ul a {
     font-size: 0.9em !important;
@@ -142,6 +156,74 @@ a.article:hover {
     color: #fff !important;
 }
 
+.subNav{
+            padding: 13px;
+            color: #fff;
+            background: #d20000; 
+            margin-bottom: 0px;
+        }
+        .subNav li{
+            list-style: none;
+            display: inline-block; 
+        }
+        .subNav li a.active,
+        .subNav li a.hover{
+            color: #fff;
+        }
+        .subNav li a{
+            color: #d2d2d2;
+            padding: 17px 50px 0px 40px;
+        }
+         
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+            padding: 12px 100px 8px 100px;  
+            background: #d20000;
+            color:#fff;
+            border: none;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+            padding: 12px 100px 8px 100px;   
+        } 
+        .nav-tabs .nav-link{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0; 
+        }
+        .pageMenu li {
+            list-style:none;
+            display: inline-block;
+        }
+        #sidebar ul.components{
+            padding: 0px;
+        }
+        #content{
+            background: url(img/burger.jpg)  no-repeat;
+        } 
+        .pageMenuNav li a.hover,
+        .pageMenuNav li a.active{
+            color:yellow;
+            /*font-weight: bold;*/
+            font-size: 22px;
+        }
+
+        .pageMenuNav li{
+            padding: 45px;
+        }
+        
+        .pageMenuNav li a{
+            color:#fff;
+            /*font-weight: bold;*/
+            font-size: 22px;
+        }
+        .pageMenu{
+            /*text-align: center!important;*/
+            /*max-width: 50%;
+            margin-left: 25%;*/
+        }
+        .subheading{
+            font-size: 22px;
+            color: yellow;
+        }
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -153,11 +235,47 @@ a.article:hover {
     transition: all 0.3s;
 }
 
+.mobilemenu{
+    display: none;
+} 
+.desktopmenu{
+    display: block;
+}
+.container-fluid{
+    /*min-height:800px;*/
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+        color:#686868;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+    } 
+
+    .container-fluid{
+        /*min-height:1100px;*/
+        padding-right: 0px;
+        padding-left: 0px;
+        background-color: #000;
+    }
+
+    .wrapper {
+        margin-top: -39px;
+        display: inline-block;
+        width: 100%;
+        height: 1100px;
+        align-items: stretch;
+    } 
+    .mobilemenu .navbar {
+        background-color: #d20000 !important;
+    }
     #sidebar {
         margin-left: -250px;
     }
@@ -166,5 +284,23 @@ a.article:hover {
     }
     #sidebarCollapse span {
         display: none;
+    } 
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        padding: 10px;  
+        text-align: center;
+        /*background: #d20000;
+        color:#fff;*/
+        border: none;
+    }
+    .mobilemenu{
+        display: block;
+    } 
+    .desktopmenu{
+        display: none;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+        text-align: center;
+        width:100%;
     }
 }
+

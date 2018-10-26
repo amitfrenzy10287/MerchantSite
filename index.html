@@ -4,89 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>FoodInHurry</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>FoodInHurry</title> 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css"> 
     <!-- Font Awesome JS -->
     <script defer src="js/solid.js" ></script>
     <script defer src="js/fontawesome.js" ></script>
     <style type="text/css">
-        .subNav{
-            padding: 13px;
-            color: #fff;
-            background: #d20000; 
-            margin-bottom: 0px;
-        }
-        .subNav li{
-            list-style: none;
-            display: inline-block; 
-        }
-        .subNav li a.active,
-        .subNav li a.hover{
-            color: #fff;
-        }
-        .subNav li a{
-            color: #d2d2d2;
-            padding: 17px 91px 0px 57px;
-        }
-        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-            padding: 12px 200px 8px 200px;  
-            background: #d20000;
-            color:#fff;
-            border: none;
-        }
-        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-            padding: 12px 200px 8px 200px;   
-        } 
-        .nav-tabs .nav-link{
-            border-top-left-radius: 0;
-            border-top-right-radius: 0; 
-        }
-        .pageMenu li {
-            list-style:none;
-            display: inline-block;
-        }
-        #sidebar ul.components{
-            padding: 0px;
-        }
-        #content{
-            background: url(img/burger.jpg)  no-repeat;
-        } 
-        .pageMenuNav li a.hover,
-        .pageMenuNav li a.active{
-            color:yellow;
-            /*font-weight: bold;*/
-            font-size: 22px;
-        }
-
-        .pageMenuNav li{
-            padding: 20px;
-        }
         
-        .pageMenuNav li a{
-            color:#fff;
-            /*font-weight: bold;*/
-            font-size: 22px;
-        }
-        .pageMenu{
-            /*text-align: center!important;*/
-            max-width: 50%;
-            margin-left: 25%;
-        }
-        .subheading{
-            font-size: 22px;
-            color: yellow;
-        }
     </style>
-</head>
-
+</head> 
 <body>
+   <div class="desktopmenu"> 
     <nav style="margin-bottom: 0px;"> 
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Page</a>
@@ -126,54 +58,97 @@
             </ul>
         </div>
     </div>
-    <div class="wrapper bgImage"> 
-        <nav id="sidebar">  
-            <ul class="list-unstyled components"> 
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+</div>
+    <div class="mobilemenu"> 
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">FoodInHurry</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="navbar-collapse collapse show" id="navbarsExample01" >
+            <ul class="navbar-nav mr-auto"> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Home</a>
+                  <a class="dropdown-item" href="#">About Us</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Order</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
+                  <a class="dropdown-item" href="#">Home</a>
+                  <a class="dropdown-item" href="#">About Us</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notification</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <a class="dropdown-item" href="#">Home</a>
+                  <a class="dropdown-item" href="#">About Us</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                  <a class="dropdown-item" href="#">Page 3</a>
+                </div>
+              </li>
             </ul> 
+          </div>
         </nav>
-
-        <!-- Page Content  -->
-        <div id="content"> 
+    </div>
+    <div class="container-fluid">  
+        <div class="wrapper bgImage"> 
+             <div class="col-md-3 bg-white">
+             <form class="p-2">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name"> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Slug </label>
+                    <input type="text" class="form-control" id="slug" placeholder="Enter Slug"> 
+                  </div> 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Page Type</label>
+                    <select class="form-control">
+                        <option>Landing </option>
+                        <option>Other </option>
+                    </select> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Template</label>
+                    <select class="form-control">
+                        <option>Katsu Burger </option>
+                        <option>Other </option>
+                    </select> 
+                  </div> 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <input type="text" class="form-control" id="description" placeholder="Enter Description"> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address"> 
+                  </div> 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Paragraph</label>
+                    <input type="text" class="form-control" id="enter_paragraph" placeholder="Enter Paragraph">  
+                  </div> 
+                </form>
+             </div> 
+            <!-- Page Content  -->
+            <div class="col-md-9"> 
               <div class="pageMenu text-center">
                   <ul class="pageMenuNav">
-                      <li class=""><a class="active" href="">Home</a></li>
+                      <li class=""><a class="active" id="enter_name" href="">Home</a></li>
                       <li><a class="text-white" href="">About Us</a></li>
                       <li><a class="text-white" href="">Page 1</a></li>
                       <li><a class="text-white" href="">Page 2</a></li>
@@ -182,13 +157,17 @@
                   </ul>
               </div>
               <div class="text-center text-white" style="margin: 10%">
-                  <h2>Big Japanese Burger</h2>
-                  <span class="subheading">76677 Plantation Blvd, Miramar FI 33023</span>
+                  <h2 id="paragraph">Big Japanese Burger</h2>
+                  <span id="enter_address" class="subheading">76677 Plantation Blvd, Miramar FI 33023</span>
               </div>
+            </div>
         </div>
-    </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    </div> 
+    <footer class="footer bg-dark text-white">
+      <div class="container text-center">
+        <span class="text-muted">FoodInHurry</span>
+      </div>
+    </footer>
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <!-- Popper.JS -->
     <script src="js/popper.min.js" ></script>
@@ -196,10 +175,20 @@
     <script src="js/bootstrap.min.js" ></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
+        
+        $("#address").bind("keyup change", function(e) {
+            $val = $("#address").val();
+            $("#enter_address").text( $val );// do stuff!
+        });
+        $("#name").bind("keyup change", function(e) {
+             
+            $val = $("#name").val();
+            $("#enter_name").text( $val );// do stuff!
+        });
+        $("#enter_paragraph").bind("keyup change", function(e) {
+           
+            $val = $("#enter_paragraph").val();
+            $("#paragraph").text( $val );// do stuff!
         });
     </script>
 </body>
